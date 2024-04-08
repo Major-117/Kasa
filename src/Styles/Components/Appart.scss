@@ -1,0 +1,43 @@
+.main-container{
+  min-height: 1000px;
+  background: rgba(128, 128, 128, 0.15);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+
+  .all-image{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 0 0 black;
+    list-style: none;
+    padding: 5px;
+    position: relative;
+    .card{
+      height: 370px;
+      width: 80%;
+      margin: 30px auto;
+      border-radius: 20px;
+      position: relative;
+
+
+      .title-appart{
+        color: white;
+        position: absolute;
+        top: 70%;
+        font-size: 20px;
+        left: 5px;
+
+
+      }
+    ;
+
+      img{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+
+  }
+}

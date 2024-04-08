@@ -1,0 +1,42 @@
+.image-picture{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  .image-pictures{
+    width: 80%;
+    height: 370px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .toutou{
+    background: none;
+    border: none;
+    cursor: pointer;
+    top: 150px;
+    z-index: 2;
+    position: relative;
+
+  }
+
+  .left{
+    right: 35%;
+  }
+
+  .right{
+    left: 36%;
+  }
+
+  .counter{
+    position: relative;
+    top: 300px;
+    transform: translateX(-40px);
+    font-size: 20px;
+    color: white;
+    font-family: "Mont";
+  }
+
+}

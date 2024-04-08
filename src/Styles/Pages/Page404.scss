@@ -1,0 +1,32 @@
+.pageError{
+  display: flex;
+  flex-direction: column;
+
+  h1{
+    font-size: 300px;
+    color: #FF6060;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .oups{
+    font-size: 40px;
+    text-align: center;
+    color: #FF6060;
+    margin-top: -200px;
+    margin-bottom: 200px;
+  }
+
+}
+
+.pageReturn{
+  text-align: center;
+  text-decoration: none;
+  color: #FF6060;
+  text-decoration: underline;
+}
+
+
+
+
+

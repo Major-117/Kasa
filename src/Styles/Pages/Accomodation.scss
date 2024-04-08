@@ -1,0 +1,61 @@
+.acomodation{
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+
+
+ .info{
+    width: 80%;
+    margin: 270px auto;
+
+    .tit{
+      color: #FF6060;
+      font-size: 30px;
+    }
+    .location{
+      margin-top: -20px;
+      color: #FF6060;
+    }
+
+    .globalTag{
+      display: flex;
+      list-style: none;
+    }
+    .tag{
+      background: #FF6060;
+    }
+
+    .info_tag{
+      display: flex;
+    }
+
+    .info_personne{
+      display: flex;
+      align-items: center;
+      color: #FF6060;
+      justify-content: space-between;
+
+      .info-per{
+        margin-left: 70%;
+        display: flex;
+
+        .info-picture{
+          height: 70px;
+          border-radius: 50px;
+          margin-left: 4px;
+        }
+
+        .rate-comp{
+          display: flex;
+          margin-top: 30px;
+          margin-right:30px;
+        }
+
+      }
+      .collapse-aco{
+        display: flex;
+
+      }
+    }
+  }
+}

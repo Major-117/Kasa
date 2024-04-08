@@ -1,0 +1,33 @@
+.Header{
+  display: flex;
+  font-family: "Mont", serif;
+  justify-content: space-between;
+  //margin: 50px 100px 100px 100px;
+  align-items: center;
+  width:80%;
+  margin: 40px auto 60px;
+
+  img{
+    height: 70px;
+  }
+
+  .Navigation{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    .nav-btn{
+      text-decoration: none;
+      list-style: none;
+      .nav-text{
+        text-decoration: none;
+        color: $color1;
+        font-size: 23px;
+      }
+
+      .isactive{
+        text-decoration: underline $color1 1.4px;
+      }
+
+    }
+  }
+}
