@@ -6,6 +6,7 @@ import {useParams} from "react-router-dom";
 import Collaps from "../Components/Collaps";
 import Rate from "../Components/Star";
 import Tags from "../Components/Tag"
+import Footer from "../Components/Footer";
 
 
 
@@ -49,6 +50,7 @@ const Accomodation = () => {
                         </Collaps>
                     </div>
                 </div>
+                <Footer/>
             </div>
     );
 };
