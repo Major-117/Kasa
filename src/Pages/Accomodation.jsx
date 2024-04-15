@@ -3,10 +3,10 @@ import Header from "../Components/Header";
 import Carousels from "../Components/Carousels";
 import data from "../Assets/appart.json";
 import {useParams} from "react-router-dom";
-import Collaps from "../Components/Collaps";
 import Rate from "../Components/Star";
 import Tags from "../Components/Tag"
 import Footer from "../Components/Footer";
+import CollapsAco from "../Components/CollapsAco";
 
 
 
@@ -42,12 +42,17 @@ const Accomodation = () => {
 
 
                     <div className="collapse-aco">
-                        <Collaps title="description">
-                            <p>{datas.description}</p>
-                        </Collaps>
-                        <Collaps title="Équipments">
-                            <p className="equip">{datas.equipments}</p>
-                        </Collaps>
+                        <CollapsAco title="description">
+                            <p className="collapse-acoTextAco">{datas.description}</p>
+                        </CollapsAco>
+
+                        <CollapsAco title="Équipments">
+                            <p className="collapse-acoTextAco equipe">
+                                {datas.equipments.map((equipment, index) => (
+                                    <span className="equipe" key={index}>{equipment}</span>
+                                ))}
+                            </p>
+                        </CollapsAco>
                     </div>
                 </div>
                 <Footer/>

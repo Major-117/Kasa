@@ -4,28 +4,39 @@
   width: 80%;
   margin: 0 auto;
   border-radius: 20px;
+  position: relative;
+
+
 
   .all-image{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    box-shadow: 0 0 0 black;
     list-style: none;
     padding: 5px;
     position: relative;
+
+
     .card{
       height: 350px;
       width: 80%;
       margin: 30px auto;
-      border-radius: 20px;
+      border-radius: 10px;
       position: relative;
+      background: linear-gradient(180deg,hsla(0,0%,100%,0),rgba(0,0,0,.5));
+
+
+
+
 
 
       .title-appart{
         color: white;
         position: absolute;
         top: 70%;
-        font-size: 20px;
-        left: 5px;
+        font-size: 22px;
+        left: 10px;
+        width: 70%;
+
 
 
       }
@@ -36,7 +47,11 @@
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
+        position: absolute;
+        z-index: -1;
+
       }
+
     }
 
   }

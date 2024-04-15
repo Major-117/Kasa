@@ -14,7 +14,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  margin: 40px auto 60px;
+  margin: 0 auto 60px;
+  padding-top: 50px;
 }
 .Header img {
   height: 70px;
@@ -61,11 +62,11 @@ body {
   width: 80%;
   margin: 0 auto;
   border-radius: 20px;
+  position: relative;
 }
 .main-container .all-image {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 0 0 black;
   list-style: none;
   padding: 5px;
   position: relative;
@@ -74,21 +75,25 @@ body {
   height: 350px;
   width: 80%;
   margin: 30px auto;
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
 }
 .main-container .all-image .card .title-appart {
   color: white;
   position: absolute;
   top: 70%;
-  font-size: 20px;
-  left: 5px;
+  font-size: 22px;
+  left: 10px;
+  width: 70%;
 }
 .main-container .all-image .card img {
   height: 100%;
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
 .footer {
@@ -171,7 +176,7 @@ body {
 }
 
 .body-about {
-  height: 100vh;
+  width: 100%;
 }
 
 .divImageAbout {
@@ -236,7 +241,7 @@ body {
   display: flex;
 }
 
-.collapse {
+.collapseAbout {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -244,7 +249,7 @@ body {
   align-items: center;
   margin: 25px auto;
 }
-.collapse .collapse-button {
+.collapseAbout .collapse-button {
   background: #FF6060;
   border: none;
   width: 80%;
@@ -258,17 +263,17 @@ body {
   padding-left: 30px;
   cursor: pointer;
 }
-.collapse .collapse-button .iconArrow {
+.collapseAbout .collapse-button .iconArrow {
   width: 20px;
   padding-right: 30px;
 }
-.collapse .collapse-button .iconArrowOpen {
+.collapseAbout .collapse-button .iconArrowOpen {
   width: 20px;
   padding-right: 30px;
   margin-right: 30px;
   transform: rotate(180deg);
 }
-.collapse .collapse-content {
+.collapseAbout .collapse-content {
   border-radius: 0 0 10px 10px;
   background: #f1efef;
   width: 80%;
@@ -278,12 +283,64 @@ body {
   font-size: 20px;
   z-index: -1;
 }
-.collapse .collapse-aboutText {
+.collapseAbout .collapse-aboutText {
   padding: 15px;
+}
+
+.collapseAco {
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin: 25px auto;
+}
+.collapseAco .collapse-buttonAco {
+  position: relative;
+  background: #FF6060;
+  border: none;
+  width: 95%;
+  height: 40px;
+  color: white;
+  border-radius: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.collapseAco .collapse-buttonAco .iconArrowAco {
+  width: 20px;
+  padding-right: 30px;
+}
+.collapseAco .collapse-buttonAco .iconArrowOpenAco {
+  width: 20px;
+  padding-right: 30px;
+  margin-right: 30px;
+  transform: rotate(180deg);
+}
+.collapseAco .collapse-contentAco {
+  border-radius: 0 0 10px 10px;
+  background: #f1efef;
+  width: 95%;
+  color: #FF6060;
+  margin-top: -25px;
+  height: 230px;
+  font-size: 20px;
+  display: flex;
+}
+.collapseAco .collapse-acoTextAco {
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 7px;
+  padding-bottom: 50px;
+}
+.collapseAco .collapse-acoTextAco .equipe {
+  display: flex;
 }
 
 .collapse-aco {
   display: flex;
+  margin-right: -2%;
 }
 
 /*# sourceMappingURL=index.css.map */
