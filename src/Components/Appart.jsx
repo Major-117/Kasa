@@ -17,10 +17,10 @@ const Appart = () => {
                 {data.map((appart, index) => (
                     <NavLink to={`/accomodation/${appart.id}`}>
                         <li key={index} className="card">
-
-                                <p className="title-appart">{appart.title}</p>
-                                <img className="img-appart" src={appart.cover} alt="appart"/>
+                            <p className="title-appart">{appart.title}</p>
+                            <img className="img-appart" src={appart.cover} alt="appart"/>
                         </li>
+
                     </NavLink>
                 ))}
             </ul>

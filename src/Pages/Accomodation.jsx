@@ -36,12 +36,12 @@ const Accomodation = () => {
                             </div>
                         </div>
                     </div>
-
                     <p className="location">{datas.location}</p>
-                    <Tags tags={datas.tags} />
+                    <Tags tags={datas.tags}/>
 
 
                     <div className="collapse-aco">
+
                         <CollapsAco title="description">
                             <p className="collapse-acoTextAco">{datas.description}</p>
                         </CollapsAco>
