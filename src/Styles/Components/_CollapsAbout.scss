@@ -50,3 +50,16 @@
   }
 
 }
+
+@media only screen and (max-width: 375px) {
+  .collapseAbout{
+    width: 90%;
+    .collapse-button{
+      width: 100%;
+    }
+    .collapse-content{
+      width: 100%;
+    }
+  }
+
+}

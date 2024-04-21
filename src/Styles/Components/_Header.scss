@@ -31,3 +31,24 @@
     }
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .Header{
+    padding-top: 20px;
+    width: 90%;
+
+    img{
+      height:47px;
+    }
+
+    .Navigation{
+      width: 150px;
+        justify-content: space-between;
+      .nav-btn{
+        .nav-text{
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

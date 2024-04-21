@@ -27,13 +27,13 @@ const Carousels = () => {
             <div className="image-picture">
                 {totalImages > 1 && (
                     <button className="toutou left" onClick={prevImage}>
-                        <img src={ArrowLeft} alt="Previous"/>
+                        <img className="arrow" src={ArrowLeft} alt="Previous"/>
                     </button>
                 )}
                 <img className="image-pictures" src={logement.pictures[image]} alt={`img ${image + 1}/${totalImages}`}/>
                 {totalImages > 1 && (
                     <button className="toutou right" onClick={nextImage}>
-                        <img src={ArrowRight} alt="Next"/>
+                        <img className="arrowRi" src={ArrowRight} alt="Next"/>
                     </button>
                 )}
                 <p className="counter">{`${image + 1}/${totalImages}`}</p>

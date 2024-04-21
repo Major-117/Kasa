@@ -25,34 +25,40 @@ const Accomodation = () => {
             <div className="acomodation">
                 <Header/>
                 <Carousels/>
-                <div className="info">
-                    <div className="info_personne">
-                        <p className="tit">{datas.title}</p>
-                        <div className="info-per">
-                            <p className="name">{datas.host.name}</p>
-                            <div className="star">
-                                <img className="info-picture" src={datas.host.picture} alt=""/>
-                                <Rate star={datas.rating}/>
+                <div>
+                    <div className="accomodationInfo">
+                        <div className="info">
+                            <p className="tittleAco">{datas.title}</p>
+                            <p className="location">{datas.location}</p>
+                            <div>
+                                <Tags tags={datas.tags}/>
                             </div>
+
+                        </div>
+                        <div className="host">
+                            <div className="nameImg">
+                                <p className="name">{datas.host.name}</p>
+                                <img className="photo" src={datas.host.picture} alt=""/>
+                            </div>
+
+                            <Rate className="rrating" star={datas.rating}/>
                         </div>
                     </div>
-                    <p className="location">{datas.location}</p>
-                    <Tags tags={datas.tags}/>
 
 
                     <div className="collapse-aco">
-
                         <CollapsAco title="description">
                             <p className="collapse-acoTextAco">{datas.description}</p>
                         </CollapsAco>
 
-                        <CollapsAco title="Équipments">
-                            <p className="collapse-acoTextAco equipe">
-                                {datas.equipments.map((equipment, index) => (
-                                    <span className="equipe" key={index}>{equipment}</span>
-                                ))}
-                            </p>
-                        </CollapsAco>
+                            <CollapsAco title="Équipments" className="collapseEquip">
+                                <p className="collapse-acoTextAco equipe">
+                                    {datas.equipments.map((equipment, index) => (
+                                        <span className="equipe" key={index}>{equipment}</span>
+                                    ))}
+                                </p>
+                            </CollapsAco>
+
                     </div>
                 </div>
                 <Footer/>

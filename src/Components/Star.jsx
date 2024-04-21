@@ -2,10 +2,10 @@ import React from 'react';
 import star1 from "../Assets/img/star1.png";
 import star2 from "../Assets/img/star2.png";
 
-const rate = ({star}) => {
+const rate = ({star,className}) => {
     const stars = [1, 2, 3, 4, 5];
     return (
-        <div className="rate-comp">
+        <div className={`rate-comp ${className}`}>
             {stars.map((level) =>
                 star >= level ? (
                     <img

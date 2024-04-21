@@ -1,10 +1,4 @@
 .footer{
-
-  .logo-footer{
-    height: 30px;
-    filter: invert(100%) grayscale(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(100%);
-
-  }
   margin-top: 70px;
   width: 100%;
   background: black;
@@ -13,8 +7,20 @@
   text-align: center;
   padding-top: 40px;
 
+  .logo-footer{
+    height: 30px;
+    filter: invert(100%) grayscale(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(100%);
+
+  }
+
   p{
     font-size: 20px;
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer{
+    margin-top: 40%;
   }
 }

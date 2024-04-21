@@ -36,7 +36,36 @@
     transform: translateX(-40px);
     font-size: 20px;
     color: white;
-    font-family: "Mont";
+    font-family: "Mont", serif;
+  }
+
+}@media only screen and (max-width: 375px) {
+
+  .image-picture{
+    margin-top: -30px;
+    .image-pictures{
+      width: 90%;
+      height: 300px;
+      border-radius: 15px;
+
+    }
+    .toutou{
+      margin-top: -10px;
+      .arrow{
+        height: 24px;
+        margin-left: -35px;
+      }
+      .arrowRi{
+        height: 24px;
+        margin-right: -35px;
+      }
+    }
+
+
+    .counter{
+      display: none;
+    }
+
   }
 
 }

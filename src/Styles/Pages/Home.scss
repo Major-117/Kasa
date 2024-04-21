@@ -2,18 +2,41 @@
     font-family: "Mont", serif;
     width: 80%;
     margin: 0 auto;
+    background: url("../../Assets/img/IMG.png") center/cover;
+    border-radius: 20px;
+    box-shadow: 96px -115px 0px 155px rgba(0,0,0,0.39) inset;
+    -webkit-box-shadow: 96px -115px 0px 155px rgba(0,0,0,0.39) inset;
+    -moz-box-shadow: 96px -115px 0px 155px rgba(0,0,0,0.39) inset;
 
 
     h1{
         text-align: center;
-        background: url("../../Assets/img/IMG.png") center/cover;
         padding: 80px;
-        border-radius: 20px;
         color: white;
         font-weight: normal;
         font-size: 50px;
-        box-shadow: 96px -115px 0px 155px rgba(0,0,0,0.39) inset;
-        -webkit-box-shadow: 96px -115px 0px 155px rgba(0,0,0,0.39) inset;
-        -moz-box-shadow: 96px -115px 0px 155px rgba(0,0,0,0.39) inset;
+
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .title-background{
+        font-family: "Mont", serif;
+        width: 90%;
+        height: 111px;
+        border-radius: 10px;
+        margin-top: -40px;
+
+        h1{
+            width: 70%;
+            font-size: 24px;
+            padding: 30px 10px 5px 20px;
+            text-align: match-parent;
+
+            .retour{
+                padding-right: 7%;
+            }
+        }
     }
 }

@@ -17,7 +17,7 @@
 
 
     .card{
-      height: 350px;
+      height: 310px;
       width: 86%;
       margin: 30px auto;
       border-radius: 10px;
@@ -34,8 +34,7 @@
         position: absolute;
         top: 70%;
         font-size: 22px;
-        left: 10px;
-        width: 70%;
+        left: 10px
 
 
 
@@ -54,5 +53,24 @@
 
     }
 
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-container{
+    background: none;
+    width: 92%;
+    margin-top: -25px;
+
+    .all-image{
+      display: flex;
+      flex-direction: column;
+
+      .card{
+        width: 100%;
+        height: 260px;
+        margin-bottom: -15px;
+      }
+    }
   }
 }

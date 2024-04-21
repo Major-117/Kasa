@@ -5,10 +5,10 @@ import Footer from "../Components/Footer";
 
 const Home = () => {
     return (
-        <div>
+        <div className="home">
             <Header/>
             <div className="title-background">
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>Chez vous, <span className="retour">partout et ailleurs</span></h1>
             </div>
             <div className="all-card">
                 <Appart/>

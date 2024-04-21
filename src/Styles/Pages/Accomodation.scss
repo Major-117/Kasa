@@ -1,60 +1,145 @@
 .acomodation{
-  height: 900px;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-
- .info{
+  .accomodationInfo{
     width: 80%;
-    margin: 270px auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 33vh auto -15px;
 
-    .tit{
-      color: #FF6060;
-      font-size: 30px;
-    }
-    .location{
-      margin-top: -20px;
+    .tittleAco{
+      font-size: 38px;
+      margin: 0;
       color: #FF6060;
     }
+
 
     .globalTag{
       display: flex;
+      margin-left: -50px;
       list-style: none;
-    }
-    .tag{
-      background: #FF6060;
+      color: white;
+      font-size: 14px;
+
+      .tag{
+          background: #FF6060;
+          border-radius: 15px;
+        padding-right: 15px;
+        padding-left: 15px;;
+        margin-left: 10px;
+      }
     }
 
-    .info_tag{
-      display: flex;
-    }
-
-    .info_personne{
-      display: flex;
-      align-items: center;
+    .location{
       color: #FF6060;
-      justify-content: space-between;
+      margin-bottom: 30px;
+    }
 
-      .info-per{
-        margin-left: 70%;
+    .host{
+      text-align: center;
+      margin-top: 15px;
+      margin-right: 5px;
+
+      .name{
+        margin-left: -33px;
+        max-width: 100px;
+        font-size: 18px;
+        color: #FF6060;
+        margin-top: 10px;
+      }
+      .photo{
+        border-radius: 100px;
+        height: 60px;
+        margin-bottom: 30px;
+        margin-right: -60px;
+      }
+
+      .nameImg{
         display: flex;
+        padding-left: -50px;
+      }
+    }
+  }
+  .collapse-aco{
+    width: 80%;
+    margin: 0 auto;
 
-        .info-picture{
-          height: 70px;
-          border-radius: 50px;
-          margin-left: 4px;
-        }
+    .collapseEquip{
+      margin-right: -30px;
+    }
+  }
+}
 
-        .rate-comp{
-          display: flex;
-          margin-top: 30px;
-          margin-right:30px;
-        }
+@media only screen and (max-width: 375px) {
+  .acomodation{
+
+    .accomodationInfo{
+        margin-top: 280px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+      .tittleAco{
+        font-size: 18px;
+        margin-bottom: -5px;
 
       }
-      .collapse-aco{
-        display: flex;
 
+      .location{
+        font-size: 14px;
+      }
+
+      .globalTag{
+        font-size: 10px;
+        text-align: center;
+        margin-top: -20px;
+
+
+        .tag{
+          border-radius: 3px;
+        }
+      }
+
+      .host{
+        display: flex;
+        .nameImg{
+          display: flex;
+          align-items: center;
+          text-align: end;
+          margin-top: -20px;
+
+        }
+        .name{
+          margin-right: 6px;
+          margin-left: 226px;
+          font-size: 12px;
+          width: 25%;
+
+        }
+        .photo{
+          height: 32px;
+          margin-bottom: 0;
+
+        }
+
+
+        .rate-comp{
+          position: absolute;
+          height: 40px;
+
+          .star{
+            height: 15px;
+          }
+        }
+      }
+    }
+    .collapse-aco{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      .collapseEquip{
+        margin-right: 0;
       }
     }
   }
