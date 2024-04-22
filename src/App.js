@@ -15,6 +15,8 @@ const App = () => {
                 <Route path="/accomodation/:id" element={<Accomodation/>}/>
                 <Route path="/*" element={<Page404/>}/>
 
+                
+
             </Routes>
         </BrowserRouter>
     );
