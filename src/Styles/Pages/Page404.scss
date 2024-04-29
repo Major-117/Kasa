@@ -21,9 +21,25 @@
 
 .pageReturn{
   text-align: center;
-  text-decoration: none;
   color: #FF6060;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 375px) {
+  .pageError{
+    h1{
+      font-size: 96px;
+    }
+
+    .oups{
+      margin-top: 0;
+      font-size: 18px;
+      margin-bottom: 100px;
+    }
+  }
+  .pageReturn{
+    margin-bottom: 34%;
+  }
 }
 
 

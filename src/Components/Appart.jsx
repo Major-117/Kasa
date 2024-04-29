@@ -21,6 +21,7 @@ const Appart = () => {
                             <img className="img-appart" src={appart.cover} alt="appart"/>
                         </li>
                     </NavLink>
+
                 ))}
             </ul>
         </main>
