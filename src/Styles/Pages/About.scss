@@ -1,23 +1,51 @@
-.body-about{
+.body-about {
   width: 100%;
 }
 
-.divImageAbout{
+.divImageAbout {
+  position: relative;
   width: 80%;
   margin: 20px auto;
-  box-shadow: inset 5em 1em gold;
+  overflow: hidden; /* Essentiel pour appliquer border-radius au shadow */
+  border-radius: 20px; /* Bordures arrondies pour l'image et l'ombre */
+}
 
-  .imageAbout{
-    height: 250px;
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
+.imageAbout {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
+  display: block;
+}
 
-  }
+.divImageAbout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px; /* Assure que l'ombre respecte les bords arrondis */
+  box-shadow: 10px 10px 5px 200px rgba(0,0,0,0.75) inset;
+  -webkit-box-shadow: 10px 10px 5px 200px rgba(0,0,0,0.30) inset;
+  -moz-box-shadow: 10px 10px 5px 200px rgba(0,0,0,0.30) inset;
+  z-index: 1; /* S'assurer que le pseudo-élément se trouve au-dessus de l'image */
+  pointer-events: none; /* Empêche le pseudo-élément d'interférer avec les interactions */
+}
+
+.Collaps-actif {
+  margin-bottom: 10%;
 }
 
 @media only screen and (max-width: 768px) {
-  .divImageAbout{
+  .divImageAbout {
     width: 90%;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .Collaps-actif {
+    margin-bottom: 13%;
+  }
+}
+

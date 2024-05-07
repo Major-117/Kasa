@@ -38,7 +38,7 @@
     }
   }
   .pageReturn{
-    margin-bottom: 34%;
+    margin-bottom: 70% !important;
   }
 }
 
@@ -46,6 +46,10 @@
   .pageError{
     h1{
       font-size: 96px;
+    }
+
+    .oups{
+      margin-top: 0;
     }
   }
   .pageReturn{
