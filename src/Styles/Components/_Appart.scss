@@ -56,7 +56,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px)  { // Format Tel
   .main-container{
     background: none;
     width: 92%;
@@ -75,21 +75,19 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px){ //Format tablette
   .main-container{
-    background: none;
     width: 92%;
     margin-top: -25px;
 
     .all-image{
-      display: flex;
-      flex-direction: column;
+      margin-top: 50px;
+      grid-template-columns: repeat(2, 1fr);
 
-      .card{
-        width: 100%;
-        height: 260px;
-        margin-bottom: -15px;
-      }
     }
+
+
+
   }
 }
+

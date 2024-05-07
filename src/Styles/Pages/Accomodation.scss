@@ -14,7 +14,6 @@
       color: #FF6060;
     }
 
-
     .globalTag{
       display: flex;
       margin-left: -50px;
@@ -23,11 +22,10 @@
       font-size: 14px;
 
       .tag{
-          background: #FF6060;
-          border-radius: 15px;
-        padding-right: 15px;
-        padding-left: 15px;;
+        background: #FF6060;
+        border-radius: 10px;
         margin-left: 10px;
+        padding: 5px 21px;
       }
     }
 
@@ -57,11 +55,11 @@
 
       .nameImg{
         display: flex;
-        padding-left: -50px;
+        padding-left: 50px;
       }
 
       .star{
-        padding: 2px;
+        padding: 5px;
       }
     }
   }
@@ -75,7 +73,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .acomodation{
 
     .accomodationInfo{
@@ -101,7 +99,8 @@
 
 
         .tag{
-          border-radius: 3px;
+          border-radius: 5px;
+          padding: 2px 20px;
         }
       }
 
@@ -116,7 +115,7 @@
         }
         .name{
           margin-right: 6px;
-          margin-left: 226px;
+          margin-left: 182px;
           font-size: 12px;
           width: 25%;
 
@@ -147,4 +146,10 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+    .acomodation{
+
+    }
 }

@@ -5,6 +5,7 @@
 .divImageAbout{
   width: 80%;
   margin: 20px auto;
+  box-shadow: inset 5em 1em gold;
 
   .imageAbout{
     height: 250px;
@@ -15,7 +16,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .divImageAbout{
     width: 90%;
   }
